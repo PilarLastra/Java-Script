@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Example page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Form Practice</h1>
+
+    <div class="other">Hello im a div</div>
+
+    <form id="contact-form" action="script.php" method="post">
+      <input type="hidden" name="redirect" value="http://www.opera.com" />
+      <p>
+        Hello im a paragraph Hello im a paragraph Hello im a paragraph Hello im
+        a paragraph Hello im a paragraph Hello im a paragraph Hello im a
+        paragraph Hello im a paragraph Hello im a paragraph
+      </p>
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" value="" />
+        </li>
+        <br />
+        <li>
+          <label for="name">LastName:</label>
+          <input type="text" name="name" id="name" value="" />
+        </li>
+        <br />
+        <li>
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" value="" />
+        </li>
+        <br />
+        <li>
+          <label for="email">Birthday:</label>
+          <input type="text" name="email" id="email" value="" />
+        </li>
+        <br />
+        <li>
+          <label for="comments">Comments:</label>
+          <textarea name="comments" id="comments" cols="25" rows="3"></textarea>
+        </li>
+        <br />
+
+        <li>
+          <label for="location">FavoriteSport:</label>
+          <select name="location" id="location">
+            <option value="">Select Sport</option>
+            <option value="nyork">Tennis</option>
+            <option value="vancouver">Football</option>
+            <option value="atlantis">Surf</option>
+            <option value="alpha">HandBall</option>
+            <option value="blackpool">Bascketball</option>
+            <option value="bognor">Hocky</option>
+          </select>
+        </li>
+        <br />
+        <li>
+          <input type="submit" value="submit" />
+          <input type="reset" value="reset" />
+        </li>
+      </ul>
+    </form>
+  </body>
+  <footer class="other">Hello im a footer</footer>
+</html>

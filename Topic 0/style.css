@@ -1,0 +1,44 @@
+p {
+  color: rgb(0, 0, 0);
+  font: italic;
+  font-size: 14px;
+}
+div {
+  text-align: center;
+  color: rgb(5, 5, 5);
+  background-color: coral;
+}
+
+footer {
+  text-align: center;
+  background-color: aquamarine;
+  align-items: center;
+}
+
+font {
+  font-weight: 100%;
+}
+
+.header {
+  font-size: 48px;
+  background-color: magenta;
+}
+
+.footer {
+  font-size: 10px;
+  background-color: magenta;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.navigation {
+  font-size: 12px;
+  background-color: blue;
+}
+
+.sidebar {
+  font-size: 10px;
+  background-color: magenta;
+}
