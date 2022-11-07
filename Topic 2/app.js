@@ -1,3 +1,5 @@
+//Punto 2 class inheritance
+
 class EventEmitter {
   constructor() {
     this.events = {};
@@ -36,7 +38,20 @@ class EventEmitter {
   }
 }
 
-class Movie extends EventEmitter {
+//Punto 4 Mixins
+
+const social = (SuperClass) =>
+  class extends SuperClass {
+    share(friendName) {
+      console.log(friendName + " " + "share" + " " + this.title);
+    }
+
+    like(friendName) {
+      console.log(friendName + " " + "likes" + " " + this.title);
+    }
+  };
+
+class Movie extends social(EventEmitter) {
   constructor(title, releaseYear, duration) {
     super(),
       (this.title = title),
@@ -64,6 +79,8 @@ class Movie extends EventEmitter {
     play();
     console.log("The resume event has been emited");
   }
+
+  //Punto 3 working whith classes
 
   addCast(cast) {
     this.actors = [].concat(this.actors, cast);
@@ -128,3 +145,7 @@ movie1.addCast(actor);
 movie1.addCast(actor2);
 movie1.addCast(cast);
 console.log(movie1.actors);
+
+movie1.like("EmilianoHernandez");
+
+movie1.share("EmilianoHernandez");
